@@ -1,0 +1,200 @@
+.services {
+    $itemHoverBackgroundColor: #F5F6F6;
+    $itemBorderColor: #ccc;
+    $itemMargin: 16px;
+
+    max-width: 1264px + $itemMargin;
+    margin: {
+        right: auto;
+        left: auto;
+    }
+
+    @media (max-width:1024px) {
+        max-width: 944px + $itemMargin;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media (max-width:992px) {
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    .item {
+        min-width: 410px;
+        width: 31%;
+        height: 340px;
+        margin: {
+            right: $itemMargin/2;
+            bottom: 16px;
+            left: $itemMargin/2;
+        };
+        padding: 0 30px;
+        box-sizing: border-box;
+        border: 1px solid $itemBorderColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        cursor: pointer;
+        &:hover {
+            border: none;
+            background-color: $itemHoverBackgroundColor;
+        }
+        
+        @media (max-width:1919px) {
+            min-width: 304px;
+            height: 264px;
+            padding: 0 20px;
+        }
+
+        @media (max-width:991px) {
+            width: 304px;
+            margin: {
+                right: 0;
+                bottom: 12px;
+                left: 0;
+            };
+        }
+
+        @media (max-width:479px) {
+            min-width: 262px;
+            width: 262px;
+            height: 262px;
+        }
+
+        &__img {
+            width: 59px;
+            height: 59px;
+            margin: 0 auto 35px;
+            display: block;
+
+            @media (max-width:1919px) {
+                width: 36px;
+                height: 36px;
+                margin-bottom: 25px;
+            }
+        }
+
+        &__title {
+            margin: {
+                bottom: 10px
+            };
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-weight: bold;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: $black;
+
+            @media (max-width:1919px) {
+                margin-bottom: 25px;
+                line-height: 20px;
+            }
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__text {
+                margin: {
+                    right: 10px;
+                };
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+                color: $orange;
+
+                @media (max-width:479px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width:1919px) {
+                    line-height: 17px;
+                }
+            }
+
+            &__img {
+                width: 6px;
+            }
+        }
+    }
+
+    // .owl-dots {
+    //     margin-left: 35px;
+    //     display: flex;
+
+    //     .owl-dot {
+    //         width: 10px;
+    //         height: 10px;
+    //         margin: 0 5px;
+    //         border-radius: 20px;
+    //         background-color: $grey;
+
+    //         &:hover {
+    //             background-color: $orange;
+    //         }
+    //     }
+
+    //     .active {
+    //         width: 10px;
+    //         position: relative;
+    //         background-color: $orange;
+            
+
+    //         &::before {
+    //             content: '';
+    //             width: 30px;
+    //             height: 100%;
+    //             border-radius: 20px;
+    //             position: absolute;
+    //             top: 0;
+    //             left: -20px;
+    //             background-color: $orange;
+
+    //             animation-duration: 2s;
+    //             animation-timing-function: ease-in-out;
+    //             animation-name: stepUp;
+
+    //             @keyframes stepUp {
+    //                 0% {
+    //                     left: -40px;
+    //                     width: 30px;
+    //                 }
+
+    //                 50% {
+    //                     left: -40px;
+    //                     width: 50px;
+    //                 }
+ 
+    //                 100% {
+    //                     width: 30px;
+    //                     left: -20px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}

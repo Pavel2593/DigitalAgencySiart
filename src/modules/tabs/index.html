@@ -1,0 +1,103 @@
+<section class="tabs section-mb">
+    <div class="tabs__nav-scroll">
+        <div class="tabs__nav-wrapper">
+            <ul class="tabs__nav">
+                <li class="tabs__item">
+                    <a href="#tab_1" class="tabs__link tabs__link-active">Помощь в подборе</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#tab_2" class="tabs__link">Описание</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#tab_3" class="tabs__link">Доставка и оплата</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#tab_4" class="tabs__link">Обмен/возврат</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#tab_5" class="tabs__link">Отзывы</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tabs__body">
+        <div class="tabs__item-mobile tabs__item-active">
+            <a href="#tab_1" class="tabs__link-mobile">Помощь в подборе</a>
+            <img class="tabs__arrow-mobile" src="./images/tabs-arrow.svg" alt="стрелка">
+        </div>
+        <div id="tab_1" class="tabs__block help-selection tabs__block-active">
+            <div class="help-selection__info">
+                <h4 class="help-selection__title">Подберем анкер по фотографиям!</h4>
+                <p class="help-selection__text">Отправьте сообщение с фотографией интерьера по email:</p>
+                <a class="help-selection__email-link" href="mailto:info@bla-bla.ru">info@bla-bla.ru</a>
+            </div>
+            <form class="form">
+                <h2 class="form__title">Загрузить фотографии на сайт прямо сейчас:</h2>
+                <div class="form__inputs">
+                    <div class="input__wrapper">
+                        <input class="input" id="name" type="text" name="name" required>
+                        <label class="input__lable" for="name">
+                            <p class="input__title">Ваше имя</p>
+                            <img class="input__img" src="./images/point.svg" alt="point">
+                        </label>
+                    </div>
+                    <div class="input__wrapper">
+                        <input class="input" id="phoneNumber" type="text" name="phoneNumber" pattern="[7-9]{1}[0-9]{10}" required>
+                        <label class="input__lable" for="phoneNumber">
+                            <p class="input__title">Телефон</p>
+                            <img class="input__img" src="./images/point.svg" alt="point">
+                        </label>
+                    </div>
+                    <div class="input__wrapper">
+                        <input class="input" id="mail" type="text" name="email">
+                        <label class="input__lable" for="mail">
+                            <p class="input__title">E-mail</p>
+                            <img class="input__img" src="./images/point.svg" alt="point">
+                        </label>
+                    </div>
+                </div>
+                <h4 class="form__subtitle">Загрузить фотографии</h4>
+                <div class="form__files"></div>
+                <div class="input-file__wrapper">
+                    <div class="input-file__info">
+                        <label class="form__btn input-file__lable" for="file">Выбрать фотографии</label>
+                        <div class="input-file__text">
+                            <span>Вы можете загрузить 5 изображений в формате JPG, JPEG, PNG.</span>
+                            <span>Размер каждой фотографии не должен превышать 2 Мбайт.</span>
+                        </div>
+                    </div>
+                    <input id="file" class="input-file" type="file" name="photo" multiple accept="image/jpeg,image/png,image/jpg">
+                </div>
+                <button class="form__btn form__button" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="tabs__item-mobile">
+            <a href="#tab_2" class="tabs__link-mobile">Описание</a>
+            <img class="tabs__arrow-mobile" src="./images/tabs-arrow.svg" alt="стрелка">
+        </div>
+        <div id="tab_2" class="tabs__block">
+            <h2>Описание</h2>
+        </div>
+        <div class="tabs__item-mobile">
+            <a href="#tab_3" class="tabs__link-mobile">Доставка и оплата</a>
+            <img class="tabs__arrow-mobile" src="./images/tabs-arrow.svg" alt="стрелка">
+        </div>
+        <div id="tab_3" class="tabs__block">
+            <h2>Доставка и оплата</h2>
+        </div>
+        <div class="tabs__item-mobile">
+            <a href="#tab_4" class="tabs__link-mobile">Обмен/возврат</a>
+            <img class="tabs__arrow-mobile" src="./images/tabs-arrow.svg" alt="стрелка">
+        </div>
+        <div id="tab_4" class="tabs__block">
+            <h2>Обмен/возврат</h2>
+        </div>
+        <div class="tabs__item-mobile tabs__item-mobile-last">
+            <a href="#tab_5" class="tabs__link-mobile">Отзывы</a>
+            <img class="tabs__arrow-mobile" src="./images/tabs-arrow.svg" alt="стрелка">
+        </div>
+        <div id="tab_5" class="tabs__block">
+            <h2>Отзывы</h2>
+        </div>
+    </div>
+</section>

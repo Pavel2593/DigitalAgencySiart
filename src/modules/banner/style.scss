@@ -1,0 +1,136 @@
+.banner {
+    width: 100%;
+
+    &__slider {
+        background-color: #EFEFEF;
+    }
+
+    .item {
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        background-color: #EFEFEF;
+        @media (min-width: 320px) {
+            height: 220px;
+            padding: 38px 109px 0 20px;
+        }
+
+        @media (min-width: 480px) {
+            padding: 68px 209px 0 30px;
+        }
+
+        &__title {
+            display: block;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            &-orange {
+                color: $orange;
+                white-space: nowrap;
+            }
+
+            @media (min-width: 320px) {
+                max-width: 350px;
+                margin-bottom: 4px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            @media (min-width: 768px) {
+                max-width: 465px;
+                margin-bottom: 8px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            @media (min-width: 1264px) {
+                max-width: 545px;
+                margin-bottom: 16px;
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+
+        &__text {
+            display: block;
+            color: #606060;
+            @media (min-width: 320px) {
+                max-width: 350px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+
+            @media (min-width: 768px) {
+                max-width: 465px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @media (min-width: 1264px) {
+                max-width: 409px;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 20px;
+            left: 229px;
+            @media (min-width:320px) {
+                width: 142px;
+                height: 164px;
+            }
+        }
+
+        .picture {
+            width: 135px;
+            height: 135px;
+            padding: 14px;
+            border-radius: 50%;
+            border: 1px solid #d7d7d7;
+            box-sizing: border-box;
+            position: absolute;
+            top: 41px;
+            right: -51px;
+
+            @media (min-width: 480px) {
+                right: 50px;
+            }
+
+            &__background {
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background-image: url('./../images/banner/1/picture-background.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            &__product {
+                width: auto;
+                position: absolute;
+                transform: rotate(30deg);
+
+                &-1 {
+                    top: -17px;
+                    left: 12px;
+                }
+
+                &-2 {
+                    top: 53px;
+                    left: 33px;
+                }
+
+                &-3 {
+                    top: 5px;
+                    left: 115px;
+                }
+            }
+        }
+    }
+}

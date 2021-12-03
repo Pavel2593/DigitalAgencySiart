@@ -1,0 +1,103 @@
+html, body {
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span, label, input, button {
+    font-family: 'Circe';
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    @media (min-width:320px) {
+        font-size: 20px;
+    }
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width:1264px) {
+        font-size: 28px;
+    }
+}
+
+h3 {
+
+    @media (min-width:320px) {
+        font-size: 14px;
+    }
+
+    @media (min-width:1024px) {
+        font-size: 16px;
+    }
+
+    @media (min-width:1264px) {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    @media (min-width:320px) {
+        font-size: 16px;
+    }
+
+    @media (min-width:1264px) {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    @media (min-width:320px) {
+        font-size: 14px;
+    }
+
+    @media (min-width:1024px) {
+        font-size: 16px;
+    }
+
+    @media (min-width:1264px) {
+        font-size: 18px;
+    }
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+input {
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.section-mb {
+    @media (min-width:320px) {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width:768px) {
+        margin-bottom: 68px;
+    }
+
+    @media (min-width:1265px) {
+        margin-bottom: 80px;
+    }
+}

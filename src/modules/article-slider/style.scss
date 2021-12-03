@@ -1,0 +1,185 @@
+.article-slider {
+    max-width: 1264px;
+    margin: {
+        right: auto;
+        left: auto;
+    };
+    // box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    @media (min-width:320px) {
+        padding: 0 20px;
+    }
+
+    @media (min-width:768px) {
+        padding: 0 40px;
+    }
+
+    @media (min-width:1345px) {
+        // padding: 0;
+    }
+
+    &__top-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width:320px) {
+            margin-bottom: 12px;
+        }
+
+        @media (min-width:768px) {
+            margin-bottom: 20px;
+        }
+
+        @media (min-width:1264px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+
+        @media (min-width:320px) {
+            line-height: 28px;
+        }
+
+        @media (min-width:1264px) {
+            line-height: 40px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        .owl-prev,
+        .owl-next {
+            width: 58px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            line-height: 40px;
+
+            background-color: transparent;
+            color: $orange;
+
+            @media (max-width:479px) {
+                width: 33px;
+                height: 33px;
+                position: absolute;
+                top: 167px;
+                font-size: 20px;
+                line-height: 20px;
+                background-color: #F68E56;
+                color: $white;
+                z-index: 2;
+            }
+        }
+
+        .owl-prev {
+            @media (max-width:479px) {
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-name: animatePrevButton;
+                left: 0px;
+
+                @keyframes animatePrevButton {
+                    from {
+                        left: -33px;
+                    }
+
+                    to {
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .owl-next {
+            @media (max-width:479px) {
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-name: animateNextButton;
+                right: 0px;
+
+                @keyframes animateNextButton {
+                    from {
+                        right: -33px;
+                    }
+
+                    to {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__slider {
+    }
+
+    .item {
+        margin: 0 auto;
+
+        @media (min-width:320px) {
+            width: 280px;
+        }
+
+        @media (min-width:480px) {
+            width: 280px;
+        }
+
+        @media (min-width:768px) {
+            width: 284px;
+        }
+
+        @media (min-width:1265px) {
+            width: 384px;
+        }
+
+        &__picture {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            @media (min-width:320px) {
+                height: 227px;
+                margin-bottom: 12px;   
+            }
+
+            @media (min-width:768px) {
+                height: 231px;
+            }
+
+            @media (min-width:1265px) {
+                height: 311px;
+                margin-bottom: 16px; 
+            }
+        }
+
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &__title {
+            font-weight: bold;
+            @media (min-width:320px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            @media (min-width:768px) {
+                font-size: 18px;
+                line-height: 28px;  
+            }
+
+            @media (min-width:1265px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
